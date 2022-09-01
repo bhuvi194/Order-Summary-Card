@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 400px;
+    min-width: 350px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+article:first-child img {
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+article:last-child {
+    padding: 7%;
+    text-align: center;
+}
+
+article:last-child h2 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 32px;
+}
+
+article:last-child #details {
+
+    color: hsl(225deg 9% 55%);
+    font-weight: 500;
+    margin: 1.5rem 1rem;
+}
+
+article:last-child .box {
+
+    border-radius: 0.8rem;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    padding: 6%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+article:last-child .box .left-side {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+article:last-child .box .left-side div {
+    margin-left: 20px;
+}
+
+article:last-child .box .left-side div h5 {
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 3px;
+    color: hsl(223, 47%, 23%);
+}
+
+article:last-child .box .left-side div p {
+    color: hsl(225deg 9% 55%);
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1.6rem;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    box-shadow: 5px 25px 15px -19px hsl(245, 75%, 52%);
+    color: white;
+    cursor: pointer;
+}
+
+#cancle-btn a {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 460px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+    .container {
+        box-sizing: border-box;
+        max-width: 350px;
+        min-width: 300px;
+    }
+
+    article:last-child h2 {
+        font-weight: 900;
+        font-size: 28px;
+    }
+
+    article:last-child #details {
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+}
